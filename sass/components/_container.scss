@@ -1,0 +1,13 @@
+.container {
+  width: $container-width;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: inherit;
+  text-align: center;
+}
+
+.container--align-start {
+  text-align: start;
+}

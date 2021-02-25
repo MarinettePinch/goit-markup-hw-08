@@ -1,0 +1,19 @@
+.footer {
+  @extend %flex-sb;
+  height: 252px;
+  align-items: flex-start;
+  background-color: $primary-background-color;
+  color: $light-text-color;
+  padding-top: $footer-padding-top;
+}
+
+.footer__social {
+  padding-right: 23px;
+}
+
+.footer__title {
+  font-size: $card-title-size-s;
+  font-weight: $card-title-s-weight;
+  line-height: $card-title-s-line-height;
+  margin-bottom: 20px;
+}

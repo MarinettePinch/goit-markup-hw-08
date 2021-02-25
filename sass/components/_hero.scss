@@ -1,0 +1,27 @@
+.hero {
+  @extend %flex-c;
+  flex-direction: column;
+  background-color: $hero-background-color;
+  background-image: linear-gradient(
+      $gradient-background-color,
+      $gradient-background-color
+    ),
+    url(../img/hero-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+  margin-bottom: 94px;
+  min-height: 600px;
+  text-align: center;
+}
+
+.hero__title {
+  font-weight: $hero-title-weight;
+  font-size: $hero-title-size;
+  line-height: $hero-title-line-height;
+  letter-spacing: $hero-title-letter-spacing;
+  color: $light-text-color;
+  margin-bottom: $card-margin;
+  display: inline-block;
+  width: 696px;
+}

@@ -1,0 +1,25 @@
+.logo {
+  @extend %link;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  width: 145px;
+  height: 31px;
+  color: $hover-text-color;
+}
+
+.logo__acsent {
+  color: $primary-text-color;
+}
+
+.logo__acsent--inversion {
+  color: $light-text-color;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}

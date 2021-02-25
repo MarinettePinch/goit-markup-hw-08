@@ -1,0 +1,130 @@
+/*Color palette*/
+
+$primary-text-color: rgba(33, 33, 33, 1);
+$hover-text-color: rgba(33, 150, 243, 1);
+$light-text-color: rgba(255, 255, 255, 1);
+$light-footer-text-color: rgba(255, 255, 255, 0.6);
+$grey-text-color: rgba(117, 117, 117, 1);
+$primary-background-color: rgba(47, 48, 58, 1);
+$secondry-background-color: rgba(245, 244, 250, 1);
+$border-color: rgba(238, 238, 238, 1);
+$hero-background-color: rgba(196, 196, 196, 1);
+$gradient-background-color: rgba(47, 48, 58, 0.4);
+$icons-color: rgba(175, 177, 184, 1);
+$backdrop-bg-color: rgba(255, 255, 255, 0.2);
+$icons-bg-footer-color: rgba(255, 255, 255, 0.1);
+$caption-bg-color: rgba(47, 48, 58, 0.8);
+
+/*Typographic*/
+
+/*h1*/
+
+$hero-title-size: 44px;
+$hero-title-weight: 900;
+$hero-title-line-height: 1.36;
+$hero-title-letter-spacing: 0.06em;
+
+/*h2*/
+
+$section-title-size: 36px;
+$section-title-weight: bold;
+$section-title-line-height: 1.17;
+
+/*h3*/
+
+$form-title-size: 20px;
+$form-title-weight: bold;
+$form-title-line-height: 1.15;
+
+/*h4*/
+
+$card-title-size-l: 18px;
+$card-title-l-weight: bold;
+$card-title-l-line-height: 2;
+$card-title-l-letter-spacing: 0.06em;
+
+/*h5*/
+
+$card-title-size: 16px;
+$card-title-weight: 500;
+$card-title-line-height: 1.19;
+
+/*h6*/
+
+$card-title-size-s: 14px;
+$card-title-s-weight: bold;
+$card-title-s-line-height: 1.14;
+
+/*text L*/
+
+$text-size: 16px;
+$text-weight: normal;
+$text-line-height: 1.19;
+
+/*text M*/
+
+$text-size-m: 14px;
+$text-m-weight: normal;
+$text-m-line-height: 1.71;
+
+/*clip*/
+
+$clip-line-height: 1.87;
+
+/*text S*/
+
+$text-size-s: 12px;
+$text-s-weight: 400;
+$text-s-line-height: 1.17;
+$text-s-letter-spacing: 0.01em;
+
+/*footer's links text*/
+
+$footer-text-size: 14px;
+$footer-text-weight: normal;
+$footer-text-line-height: 1.71;
+
+/*button's text*/
+
+$button-text-size-s: 16px;
+$button-text-weight: bold;
+$button-text-line-height: 1.87;
+
+/*header's links text*/
+
+$header-text-weight: 500;
+$header-letter-spacing: 0.02em;
+
+/*navigation links*/
+
+$nav-text-size: 14px;
+$nav-text-line-height: 1.14;
+
+/*phone namber*/
+
+$tel-text-size: 14px;
+$tel-text-line-height: 1.14;
+
+/*e-mail*/
+
+$mail-text-size: 14px;
+$mail-text-line-height: 1.14;
+
+/*Geometry*/
+
+$card-margin: 30px;
+$radius: 4px;
+$header-hight: 80px;
+$header-padding: 24px 0;
+$container-width: 1170px;
+$title-pagging-bottom: 50px;
+$footer-padding-top: 60px;
+
+/*Transition*/
+
+$transition-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+/*Shadow*/
+
+$shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);

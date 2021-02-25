@@ -1,0 +1,51 @@
+.address__items {
+  font-size: $footer-text-size;
+  font-weight: $footer-text-weight;
+  line-height: $footer-text-line-height;
+  font-style: normal;
+}
+
+.address__items--row {
+  @extend %flex-sb;
+}
+
+.address__list {
+  @extend %list;
+  margin-bottom: 9px;
+}
+
+.address__list--row {
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.address__link {
+  @extend %link;
+  color: $light-footer-text-color;
+}
+
+.address__link--row {
+  font-size: $mail-text-size;
+  line-height: $mail-text-line-height;
+  font-weight: $header-text-weight;
+  letter-spacing: $header-letter-spacing;
+  font-style: normal;
+  color: $grey-text-color;
+  transition: color $transition-animation;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $hover-text-color;
+    cursor: pointer;
+  }
+}
+
+.address__icon {
+  fill: currentColor;
+}
+
+.address__span {
+  margin-left: 10px;
+}

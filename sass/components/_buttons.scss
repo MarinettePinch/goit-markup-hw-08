@@ -1,0 +1,26 @@
+.buttons {
+  @extend %flex-sb;
+}
+
+.buttons--center {
+  @extend %flex-c;
+}
+
+.buttons__list {
+  @extend %list;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.buttons__list--round {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.buttons__list--margin-l {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

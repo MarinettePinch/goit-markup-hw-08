@@ -1,0 +1,43 @@
+.cards {
+  @extend %flex-sb;
+  align-items: flex-start;
+}
+
+.cards__list {
+  @extend %list;
+  color: $grey-text-color;
+  &:not(:last-child) {
+    margin-right: $card-margin;
+  }
+}
+
+.cards__list--with-shadow {
+  box-shadow: $shadow;
+}
+
+.cards__list--multi-row {
+  &:not(:last-child) {
+    margin-right: 0;
+    &:not(:nth-child(3n)) {
+      margin-right: $card-margin;
+    }
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: $card-margin;
+    }
+  }
+
+  .cards__link {
+    @extend %link;
+    display: inline-block;
+    width: 370px;
+    min-height: 404px;
+    color: currentColor;
+    transition: box-shadow $transition-animation;
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+}

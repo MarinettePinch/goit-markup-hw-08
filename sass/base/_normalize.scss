@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  color: $primary-text-color;
+  background-color: $light-text-color;
+  letter-spacing: 0.03em;
+}
+
+.title--upp {
+  text-transform: uppercase;
+}
+
+%flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+%flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+%whole-area {
+  height: 100%;
+  width: 100%;
+}
+
+%link {
+  text-decoration: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+%list {
+  list-style-type: none;
+}

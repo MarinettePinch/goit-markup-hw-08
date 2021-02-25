@@ -1,0 +1,24 @@
+.overley {
+  position: absolute;
+  top: 294px;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: $hover-text-color;
+  opacity: 0.9;
+  transform: translatey(0%);
+  transition: transform $transition-animation;
+}
+
+.cards__link:hover .overley,
+.cards__link:active .overley,
+.cards__link:focus .overley {
+  transform: translateY(-100%);
+}
+
+.overley__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $light-text-color;
+}

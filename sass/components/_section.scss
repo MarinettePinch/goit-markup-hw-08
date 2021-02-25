@@ -1,0 +1,23 @@
+.section {
+  width: 100%;
+  padding: 94px 0;
+}
+
+.section__title {
+  font-size: $section-title-size;
+  font-weight: $section-title-weight;
+  letter-spacing: $text-s-letter-spacing;
+  padding-bottom: $title-pagging-bottom;
+}
+
+.section__buttons--center {
+  margin-bottom: $title-pagging-bottom;
+}
+
+.section--low {
+  padding: 0;
+}
+
+.section--grey {
+  background-color: $secondry-background-color;
+}

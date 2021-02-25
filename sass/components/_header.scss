@@ -1,0 +1,7 @@
+.header {
+  @extend %flex-sb;
+  padding: $header-padding;
+  height: $header-hight;
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+}
