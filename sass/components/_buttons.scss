@@ -4,13 +4,22 @@
 
 .buttons--center {
   @extend %flex-c;
+  margin-right: -8px;
+  margin-bottom: -8px;
+}
+
+.buttons--round {
+  margin: auto;
+  width: 206px;
+}
+
+.buttons--margin-l {
+  margin-right: -$lattice-margin;
+  margin-bottom: -$lattice-margin;
 }
 
 .buttons__list {
   @extend %list;
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
 }
 
 .buttons__list--round {
@@ -19,8 +28,13 @@
   }
 }
 
+.buttons__list--center {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
 .buttons__list--margin-l {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  flex-basis: $btn-width;
+  margin-right: $lattice-margin;
+  margin-bottom: $lattice-margin;
 }

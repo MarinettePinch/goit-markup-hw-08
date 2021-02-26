@@ -1,6 +1,18 @@
 .section {
   width: 100%;
-  padding: 94px 0;
+  padding: $section-padding;
+}
+
+.section--hidden {
+  display: none;
+}
+
+/*.section--low {
+  padding: 0;
+}*/
+
+.section--grey {
+  background-color: $secondry-background-color;
 }
 
 .section__title {
@@ -12,12 +24,4 @@
 
 .section__buttons--center {
   margin-bottom: $title-pagging-bottom;
-}
-
-.section--low {
-  padding: 0;
-}
-
-.section--grey {
-  background-color: $secondry-background-color;
 }

@@ -1,14 +1,16 @@
 .footer {
   @extend %flex-sb;
-  height: 252px;
-  align-items: flex-start;
+  height: $footer-heigth;
   background-color: $primary-background-color;
   color: $light-text-color;
   padding-top: $footer-padding-top;
+  flex-direction: column;
+  align-items: center;
+  /*align-items: flex-start;*/
 }
 
 .footer__social {
-  padding-right: 23px;
+  /*padding-right: 23px;*/
 }
 
 .footer__title {
@@ -16,4 +18,10 @@
   font-weight: $card-title-s-weight;
   line-height: $card-title-s-line-height;
   margin-bottom: 20px;
+  margin-top: $footer-padding-top;
+  text-align: center;
+}
+
+.footer__button {
+  margin: 0 auto;
 }

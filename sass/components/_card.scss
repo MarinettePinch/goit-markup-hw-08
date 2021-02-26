@@ -1,11 +1,11 @@
 .card {
-  width: 270px;
+  width: 100%;
   background-color: $light-text-color;
   position: relative;
 }
 
 .card--wide {
-  width: 370px;
+  width: 100%;
 }
 
 .card__image-box {
@@ -14,6 +14,11 @@
   min-height: 120px;
   position: relative;
   overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  position: relative;
 }
 
 .card__caption {

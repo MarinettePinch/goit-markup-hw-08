@@ -35,7 +35,7 @@
 
 .input--inversion {
   height: 50px;
-  width: 368px;
+  width: $input-width;
   color: $light-text-color;
   font-size: $text-size;
   line-height: 1.25;
@@ -43,6 +43,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px 16px;
   margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .input__label {
