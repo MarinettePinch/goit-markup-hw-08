@@ -34,10 +34,10 @@
             aria-label="Переключатель мобильного меню"
           >
             <use class="button__burger" href="./img/sprite.svg#menu"></use>
-            <use class="buuton__cross" href="./img/sprite.svg#close-menu"></use>
+            <use class="button__cross" href="./img/sprite.svg#close-menu"></use>
           </svg>
         </button>
-
+        <!--menu-modal-->
         <div class="modal--nav" id="menu-container" data-menu>
           <nav class="page-nav header__page-nav">
             <ul class="page-nav__items">
@@ -59,13 +59,15 @@
                   class="address__link address__link--row"
                   href="mailto:info@devstudio.com"
                 >
-                  <svg width="16" height="12">
+                  <svg class="address__img" width="16" height="12">
                     <use
                       class="address__icon"
                       href="./img/sprite.svg#envelope"
                     ></use>
                   </svg>
-                  <span class="address__span">info@devstudio.com</span>
+                  <span class="address__span address--size-s"
+                    >info@devstudio.com</span
+                  >
                 </a>
               </li>
               <li class="address__list address__list--row">
@@ -73,20 +75,33 @@
                   class="address__link address__link--row"
                   href="tel:+380961111111"
                 >
-                  <svg width="10" height="16">
+                  <svg class="address__img" width="10" height="16">
                     <use
                       class="address__icon"
                       href="./img/sprite.svg#smartphone"
                     ></use>
                   </svg>
-                  <span class="address__span address--size-s"
-                    >+38 096 111 11 11</span
-                  >
+                  <span class="address__span">+38 096 111 11 11</span>
                 </a>
+              </li>
+            </ul>
+            <ul class="buttons address__button">
+              <li class="buttons__list buttons__list--social">
+                <a class="button--social" href="#">Instagram</a>
+              </li>
+              <li class="buttons__list buttons__list--social">
+                <a class="button--social" href="#">Twitter</a>
+              </li>
+              <li class="buttons__list buttons__list--social">
+                <a class="button--social" href="#">Facebook</a>
+              </li>
+              <li class="buttons__list buttons__list--social">
+                <a class="button--social" href="#">LinkedIn</a>
               </li>
             </ul>
           </address>
         </div>
+        <!--/menu-modal-->
       </div>
     </header>
 

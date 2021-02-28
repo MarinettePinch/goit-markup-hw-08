@@ -38,3 +38,21 @@
   margin-right: $lattice-margin;
   margin-bottom: $lattice-margin;
 }
+
+.buttons__list--social {
+  @extend %flex-c;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:not(:first-child) {
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: 10px;
+      height: 22px;
+      width: 1px;
+      background-color: $primary-text-color;
+      opacity: 0.2;
+    }
+  }
+}

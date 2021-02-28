@@ -118,6 +118,10 @@ $header-padding: 16px;
 /*$header-hight: 80px;
 $header-padding: 24px 0;*/
 
+$display-address-btn: flex;
+
+/*$display-address-btn: none*/
+
 $hero-hight: 400px;
 
 $hero-bg-img: url('../img/hero-bg-img.png');
@@ -176,16 +180,19 @@ $nav-text-line-height: 1.14;*/
 
 /*phone namber*/
 
-$tel-text-size: 14px;
-$tel-text-line-height: 1.14;
-
-/*e-mail*/
-
-$mail-text-size: 34px;
-$mail-text-line-height: 1.18;
+$mail-text-size: 24px;
+$mail-text-line-height: 1.16;
 
 /*$mail-text-size: 14px;
 $mail-text-line-height: 1.14;*/
+
+/*e-mail*/
+
+$tel-text-size: 34px;
+$tel-text-line-height: 1.18;
+
+/*$tel-text-size: 14px;
+$tel-text-line-height: 1.14;*/
 
 $input-width: 100%;
 

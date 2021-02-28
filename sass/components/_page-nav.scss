@@ -1,16 +1,18 @@
 .page-nav {
-  text-align: start;
-  position: relative;
-  @extend %flex-sb;
+  /*@extend %flex-sb;
+  position: relative;*/
 }
 
 .page-nav__items {
+  @extend %flex-st;
+  flex-direction: column;
   /*@extend %flex-sb;
   margin-left: 93px;*/
 }
 
 .page-nav__list {
   @extend %list;
+  text-align: start;
   position: relative;
   display: block;
   height: $nav-text-size;

@@ -9,13 +9,21 @@
 
 .modal--nav {
   @extend %flex-sb;
+  align-items: flex-start;
   flex-direction: column;
   display: none;
-  /*position: relative;*/
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  flex-direction: column;
   min-height: 796px;
   padding: 48px 40px;
   background-color: $light-text-color;
+  z-index: 10;
+  &.is-open {
+    display: flex;
+  }
 }
 
 .modal__button {

@@ -31,6 +31,13 @@ img {
   flex-wrap: wrap;
 }
 
+%flex-st {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 %flex-c {
   display: flex;
   justify-content: center;
