@@ -7,6 +7,17 @@
   border-radius: $radius;
 }
 
+.modal--nav {
+  @extend %flex-sb;
+  flex-direction: column;
+  display: none;
+  /*position: relative;*/
+  width: 100%;
+  min-height: 796px;
+  padding: 48px 40px;
+  background-color: $light-text-color;
+}
+
 .modal__button {
   position: absolute;
   top: 8px;
@@ -28,6 +39,7 @@
 .backdrop__modal {
   position: relative;
   margin: auto;
+  overflow-y: scroll;
 }
 
 .is-hidden {

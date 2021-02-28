@@ -92,28 +92,12 @@ $button-text-line-height: 1.87;
 $header-text-weight: 500;
 $header-letter-spacing: 0.02em;
 
-/*navigation links*/
-
-$nav-text-size: 14px;
-$nav-text-line-height: 1.14;
-
-/*phone namber*/
-
-$tel-text-size: 14px;
-$tel-text-line-height: 1.14;
-
-/*e-mail*/
-
-$mail-text-size: 14px;
-$mail-text-line-height: 1.14;
-
 /*Geometry*/
 
 $radius: 4px;
-$header-hight: 80px;
-$header-padding: 24px 0;
 $footer-padding-top: 60px;
 $lattice-margin: 30px;
+$image-box-height: 294px;
 
 /*Transition*/
 
@@ -128,11 +112,21 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 
 $container-width: 450px;
 
+$header-hight: 60px;
+$header-padding: 16px;
+
+/*$header-hight: 80px;
+$header-padding: 24px 0;*/
+
 $hero-hight: 400px;
+
+$hero-bg-img: url('../img/hero-bg-img.png');
+
+$hero-bg-img2x: url('../img/hero-bg-img@2x.png');
 
 /*$hero-hight: 600px;*/
 
-$hero-padding: 180px 0;
+$hero-padding: 118px 0;
 
 /*$hero-padding: 200px 0;*/
 
@@ -153,6 +147,7 @@ $section-title-size: 28px;
 
 /*$section-title-size: 36px;*/
 
+$title-align: center;
 $title-pagging-bottom: 30px;
 
 /*$title-pagging-bottom: 50px;*/
@@ -165,6 +160,33 @@ $footer-heigth: 603px;
 
 /*$footer-heigth: 252px;*/
 
-$input-width: 450px;
+/*navigation links*/
+
+$address-m-b: 32px;
+$address-m-r: 0;
+
+/*$address-m-b: 0;
+$address-m-r: 50px*/
+
+$nav-text-size: 40px;
+$nav-text-line-height: 1.17;
+
+/*$nav-text-size: 14px;
+$nav-text-line-height: 1.14;*/
+
+/*phone namber*/
+
+$tel-text-size: 14px;
+$tel-text-line-height: 1.14;
+
+/*e-mail*/
+
+$mail-text-size: 34px;
+$mail-text-line-height: 1.18;
+
+/*$mail-text-size: 14px;
+$mail-text-line-height: 1.14;*/
+
+$input-width: 100%;
 
 /*$input-width: 368px;*/

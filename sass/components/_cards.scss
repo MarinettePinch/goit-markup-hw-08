@@ -1,8 +1,8 @@
 .cards {
-  @extend %flex-sb;
-  align-items: flex-start;
   margin-right: -$lattice-margin;
   margin-bottom: -$lattice-margin;
+  /*@extend %flex-sb;
+  align-items: flex-start;*/
 }
 
 .cards__list {

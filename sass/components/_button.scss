@@ -21,10 +21,43 @@
   }
 }
 
+.button__burger {
+  fill: currentColor;
+  display: block;
+}
+
+.buuton__cross {
+  fill: currentColor;
+  display: none;
+}
+
+.button--menu {
+  color: $primary-text-color;
+  background-color: $light-text-color;
+  border: none;
+  margin-right: 8px;
+  transition: color $transition-animation;
+  &:hover {
+    color: $hover-text-color;
+    cursor: pointer;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &.is-open .button__burger {
+    display: none;
+  }
+  &.is-open .buuton__cross {
+    display: block;
+  }
+}
+
 .button--size-l {
   background-color: $hover-text-color;
   color: $light-text-color;
-  min-width: 200px;
+  margin: 0 auto;
+  width: 200px;
   min-height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

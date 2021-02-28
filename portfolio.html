@@ -18,56 +18,74 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="page-nav header__page-nav">
-          <a class="logo header__logo" href="./index.html">
-            <span class="logo__acsent">Web</span>Studio
-          </a>
-          <ul class="page-nav__items">
-            <li class="page-nav__list">
-              <a class="page-nav__link" href="./index.html">Студия</a>
-            </li>
-            <li class="page-nav__list">
-              <a class="page-nav__link current" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="page-nav__list">
-              <a class="page-nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="address header__address">
-          <ul class="address__items address__items--row">
-            <li class="address__list address__list--row">
-              <a
-                class="address__link address__link--row"
-                href="mailto:info@devstudio.com"
-              >
-                <svg width="16" height="12">
-                  <use
-                    class="address__icon"
-                    href="./img/sprite.svg#envelope"
-                  ></use>
-                </svg>
-                <span class="address__span">info@devstudio.com</span>
-              </a>
-            </li>
-            <li class="address__list address__list--row">
-              <a
-                class="address__link address__link--row"
-                href="tel:+380961111111"
-              >
-                <svg width="10" height="16">
-                  <use
-                    class="address__icon"
-                    href="./img/sprite.svg#smartphone"
-                  ></use>
-                </svg>
-                <span class="address__span">+38 096 111 11 11</span>
-              </a>
-            </li>
-          </ul>
-        </address>
+        <a class="logo header__logo" href="./index.html">
+          <span class="logo__acsent">Web</span>Studio
+        </a>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="button--menu"
+            width="24"
+            height="20"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="button__burger" href="./img/sprite.svg#menu"></use>
+            <use class="buuton__cross" href="./img/sprite.svg#close-menu"></use>
+          </svg>
+        </button>
+
+        <div class="modal--nav" id="menu-container" data-menu>
+          <nav class="page-nav header__page-nav">
+            <ul class="page-nav__items">
+              <li class="page-nav__list">
+                <a class="page-nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="page-nav__list current">
+                <a class="page-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="page-nav__list">
+                <a class="page-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address header__address">
+            <ul class="address__items address__items--row">
+              <li class="address__list address__list--row">
+                <a
+                  class="address__link address__link--row"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg width="16" height="12">
+                    <use
+                      class="address__icon"
+                      href="./img/sprite.svg#envelope"
+                    ></use>
+                  </svg>
+                  <span class="address__span">info@devstudio.com</span>
+                </a>
+              </li>
+              <li class="address__list address__list--row">
+                <a
+                  class="address__link address__link--row"
+                  href="tel:+380961111111"
+                >
+                  <svg width="10" height="16">
+                    <use
+                      class="address__icon"
+                      href="./img/sprite.svg#smartphone"
+                    ></use>
+                  </svg>
+                  <span class="address__span">+38 096 111 11 11</span>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <!--portfolio section-->
@@ -101,10 +119,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img1.jpg"
+                      srcset="./img/portfolio-img1@2x.jpg 2x"
                       alt="Технокряк"
                     />
                     <div class="overley card__overley">
@@ -126,10 +145,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img2.jpg"
+                      srcset="./img/portfolio-img2@2x.jpg 2x"
                       alt="Постер New Orlean vs Golden Star"
                     />
                     <div class="overley card__overley">
@@ -153,10 +173,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img3.jpg"
+                      srcset="./img/portfolio-img3@2x.jpg 2x"
                       alt="Ресторан Seafood"
                     />
                     <div class="overley card__overley">
@@ -178,10 +199,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img4.jpg"
+                      srcset="./img/portfolio-img4@2x.jpg 2x"
                       alt="Проект Prime"
                     />
                     <div class="overley card__overley">
@@ -203,10 +225,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img5.jpg"
+                      srcset="./img/portfolio-img5@2x.jpg 2x"
                       alt="Проект Boxes"
                     />
                     <div class="overley card__overley">
@@ -228,10 +251,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img6.jpg"
+                      srcset="./img/portfolio-img6@2x.jpg 2x"
                       alt="Inspiration has no Borders"
                     />
                     <div class="overley card__overley">
@@ -255,10 +279,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img7.jpg"
+                      srcset="./img/portfolio-img7@2x.jpg 2x"
                       alt="Издание Limited Edition"
                     />
                     <div class="overley card__overley">
@@ -282,10 +307,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img8.jpg"
+                      srcset="./img/portfolio-img8@2x.jpg 2x"
                       alt="Проект LAB"
                     />
                     <div class="overley card__overley">
@@ -307,10 +333,11 @@
             <li class="cards__list cards__list--multi-row">
               <a class="cards__link" href="#">
                 <figure class="card card--wide">
-                  <div class="card__image-box">
+                  <div class="card__image-box card__image-box--with-owerley">
                     <img
                       class="card__image"
                       src="./img/portfolio-img9.jpg"
+                      srcset="./img/portfolio-img9@2x.jpg 2x"
                       alt="Growing Business"
                     />
                     <div class="overley card__overley">
@@ -336,7 +363,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container container--align-start">
+      <div class="container">
         <div class="footer__contacts">
           <a class="logo footer__logo" href="./index.html">
             <span class="logo__acsent logo__acsent--inversion">Web</span>Studio
@@ -359,7 +386,7 @@
         </div>
         <div class="social footer__social">
           <h6 class="footer__title title--upp">присоединяйтесь</h6>
-          <ul class="buttons footer__buttons">
+          <ul class="buttons buttons--round footer__buttons">
             <li class="buttons buttons__list--round">
               <a class="button button--round button--inversion" href="#">
                 <svg width="20" height="20">
@@ -413,7 +440,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="button button--size-l">
+            <button type="submit" class="button button--size-l footer__button">
               <span class="button__span">Подписаться</span>
               <svg class="button__icon" width="24" height="24">
                 <use href="./img/sprite.svg#send"></use>
@@ -423,5 +450,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

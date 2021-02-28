@@ -6,7 +6,8 @@
 }
 
 .address__items--row {
-  @extend %flex-sb;
+  text-align: start;
+  /*@extend %flex-sb;*/
 }
 
 .address__list {
@@ -15,7 +16,7 @@
 }
 
 .address__list--row {
-  margin-bottom: 0;
+  margin-bottom: $address-m-b;
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -38,14 +39,19 @@
   &:focus,
   &:active {
     color: $hover-text-color;
-    cursor: pointer;
   }
 }
 
 .address__icon {
+  display: none;
   fill: currentColor;
 }
 
 .address__span {
-  margin-left: 10px;
+  /*margin-left: 10px;*/
+}
+
+.address--size-s {
+  font-size: $tel-text-size;
+  line-height: $tel-text-line-height;
 }

@@ -1,21 +1,23 @@
 .page-nav {
+  text-align: start;
+  position: relative;
   @extend %flex-sb;
 }
 
 .page-nav__items {
-  @extend %flex-sb;
-  margin-left: 93px;
+  /*@extend %flex-sb;
+  margin-left: 93px;*/
 }
 
 .page-nav__list {
   @extend %list;
   position: relative;
   display: block;
-  height: 14px;
+  height: $nav-text-size;
   width: auto;
-
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: $address-m-b;
+    margin-right: $address-m-r;
   }
 }
 
@@ -23,14 +25,14 @@
   @extend %link;
   display: block;
   font-size: $nav-text-size;
-  line-height: $tel-text-line-height;
+  line-height: $nav-text-line-height;
   font-weight: $header-text-weight;
   letter-spacing: $header-letter-spacing;
   color: $primary-text-color;
   transition: color $transition-animation;
   &.current {
     color: $hover-text-color;
-    &::after {
+    /*&::after {
       content: '';
       display: inline-block;
       width: 100%;
@@ -38,15 +40,14 @@
       border-radius: 2px;
       background-color: $hover-text-color;
       margin-top: 28px;
-    }
+    }*/
   }
 
   &:hover,
   &:focus,
   &:active {
     color: $hover-text-color;
-    cursor: pointer;
-    &::after {
+    /*&::after {
       content: '';
       display: inline-block;
       width: 100%;
@@ -54,6 +55,6 @@
       border-radius: 2px;
       background-color: $hover-text-color;
       margin-top: 28px;
-    }
+    }*/
   }
 }
