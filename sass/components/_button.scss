@@ -54,6 +54,9 @@
     display: flex;
     z-index: 20;
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .button--size-l {

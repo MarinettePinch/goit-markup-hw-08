@@ -1,11 +1,23 @@
 .card {
-  width: 100%;
+  width: $card-width;
   background-color: $light-text-color;
   position: relative;
+  @media screen and (min-width: 768px) {
+    width: $btn-width;
+  }
+  @media screen and (min-width: 1200px) {
+    width: $btn-width-dt;
+  }
 }
 
 .card--wide {
-  width: 100%;
+  width: $card-width;
+  @media screen and (min-width: 768px) {
+    width: $btn-width;
+  }
+  @media screen and (min-width: 1200px) {
+    width: $btn-width-tab;
+  }
 }
 
 .card__image-box {

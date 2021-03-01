@@ -115,10 +115,10 @@ $container-width: calc(100vw - 43px);
 $header-hight: 60px;
 $header-padding: 16px;
 
-/*$header-hight: 80px;
-$header-padding: 24px 0;*/
+$header-hight-tab: 80px;
+$header-padding-tab: 21px 15px;
 
-$display-address-btn: flex;
+$header-padding-dt: 24px 0;
 
 /*$display-address-btn: none*/
 
@@ -157,8 +157,10 @@ $title-pagging-bottom: 30px;
 /*$title-pagging-bottom: 50px;*/
 
 $card-width: calc(100%);
-$card-width-wide: calc(100%);
 $btn-width: calc(100% / 2 - 30px);
+$btn-width-tab: calc(100% / 3 - 30px);
+$card-width-dt: calc(100% / 4 - 30px);
+$btn-width-dt: calc(100% / 6 - 30px);
 
 $footer-heigth: 603px;
 
@@ -166,33 +168,37 @@ $footer-heigth: 603px;
 
 /*navigation links*/
 
-$address-m-b: 32px;
-$address-m-r: 0;
+$manu-margin: 88px;
 
-/*$address-m-b: 0;
-$address-m-r: 50px*/
+$manu-margin-dt: 94px;
 
 $nav-text-size: 40px;
 $nav-text-line-height: 1.17;
 
-/*$nav-text-size: 14px;
-$nav-text-line-height: 1.14;*/
+$nav-text-size-tab: 14px;
+$nav-text-line-height-tab: 1.14;
 
-/*phone namber*/
+/*e-mail*/
 
 $mail-text-size: 24px;
 $mail-text-line-height: 1.16;
 
-/*$mail-text-size: 14px;
-$mail-text-line-height: 1.14;*/
-
-/*e-mail*/
+/*phone namber*/
 
 $tel-text-size: 34px;
 $tel-text-line-height: 1.18;
 
-/*$tel-text-size: 14px;
-$tel-text-line-height: 1.14;*/
+$tel-text-size-tab: 12px;
+$tel-text-line-height-tab: 1.17;
+
+$tel-text-size-dt: 14px;
+$tel-text-line-heigh-dt: 1.14;
+
+/*address margin*/
+
+$address-m-b: 32px;
+
+$address-m-r: 50px;
 
 $input-width: 100%;
 

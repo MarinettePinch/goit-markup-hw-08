@@ -8,7 +8,13 @@
 .address__items--row {
   @extend %flex-st;
   flex-direction: column-reverse;
-  /*@extend %flex-sb;*/
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .address__list {
@@ -38,17 +44,26 @@
   letter-spacing: $header-letter-spacing;
   font-style: normal;
   color: $hover-text-color;
-  /*transition: color $transition-animation;
-  &:hover,
-  &:focus,
-  &:active {
-    color: $hover-text-color;
-  }*/
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    font-size: $tel-text-size-tab;
+    line-height: $tel-text-line-height-tab;
+    color: $grey-text-color;
+    transition: color $transition-animation;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hover-text-color;
+    }
+  }
 }
 
 .address__img {
-  display: none;
-  /*display: block;*/
+  display: block;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .address__icon {
@@ -56,17 +71,24 @@
 }
 
 .address__span {
-  /*margin-left: 10px;*/
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
+  }
 }
 
 .address--size-s {
-  font-size: $mail-text-size;
-  line-height: $mail-text-line-height;
-  color: $grey-text-color;
+  @media screen and (max-width: 767px) {
+    font-size: $mail-text-size;
+    line-height: $mail-text-line-height;
+    color: $grey-text-color;
+  }
 }
 
 .address__button {
-  display: $display-address-btn;
-  justify-content: start;
-  margin-top: 64px;
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: start;
+    margin-top: 64px;
+  }
 }

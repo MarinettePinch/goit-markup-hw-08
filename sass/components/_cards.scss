@@ -1,8 +1,11 @@
 .cards {
   margin-right: -$lattice-margin;
   margin-bottom: -$lattice-margin;
-  /*@extend %flex-sb;
-  align-items: flex-start;*/
+  @extend %flex-sb;
+  align-items: flex-start;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
 
 .cards__list {
