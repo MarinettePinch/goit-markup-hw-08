@@ -2,10 +2,12 @@
   @extend %flex-sb;
 }
 
-.buttons--center {
-  @extend %flex-c;
+.section__buttons {
+  @extend %flex-st;
+  margin-bottom: 32px;
   margin-right: -8px;
-  margin-bottom: -8px;
+  /*@extend %flex-c;
+  margin-bottom: -8px;*/
 }
 
 .buttons--round {
@@ -28,7 +30,7 @@
   }
 }
 
-.buttons__list--center {
+.buttons__list--grey {
   margin-right: 8px;
   margin-bottom: 8px;
 }

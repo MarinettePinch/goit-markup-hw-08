@@ -10,10 +10,10 @@
 
 .checkbox__label {
   @extend %flex-sb;
-  margin: 20px 13px 30px;
-  font-size: $text-size-m;
+  margin: 20px 0 30px;
+  font-size: $checkbox-text-size;
   font-weight: $text-m-weight;
-  line-height: $text-m-line-height;
+  line-height: $checkbox-line-height;
   color: $grey-text-color;
   cursor: pointer;
   &::before {

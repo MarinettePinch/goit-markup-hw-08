@@ -41,6 +41,8 @@ $mail-text-line-height: 1.14;*/
 /*$tel-text-size: 14px;
 $tel-text-line-height: 1.14;*/
 /*$input-width: 368px;*/
+/*$checkbox-text-size: 14px;
+$checkbox-line-height: 1.71;*/
 *,
 *::before,
 *::after {
@@ -82,7 +84,7 @@ img {
       flex-wrap: wrap;
 }
 
-.page-nav__items, .address__items--row {
+.page-nav__items, .address__items--row, .section__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +98,7 @@ img {
       flex-wrap: wrap;
 }
 
-.card__image-box, .buttons--center, .buttons__list--social, .button, .button--menu {
+.card__image-box, .buttons__list--social, .button, .button--menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +196,7 @@ img {
 }
 
 .container {
-  width: 450px;
+  width: calc(100vw - 43px);
   margin: 0 auto;
   text-align: center;
   display: inherit;
@@ -589,9 +591,11 @@ img {
   color: white;
 }
 
-.buttons--center {
+.section__buttons {
+  margin-bottom: 32px;
   margin-right: -8px;
-  margin-bottom: -8px;
+  /*@extend %flex-c;
+  margin-bottom: -8px;*/
 }
 
 .buttons--round {
@@ -608,7 +612,7 @@ img {
   margin-right: 10px;
 }
 
-.buttons__list--center {
+.buttons__list--grey {
   margin-right: 8px;
   margin-bottom: 8px;
 }
@@ -784,7 +788,8 @@ img {
 }
 
 .modal {
-  width: 530px;
+  z-index: 30;
+  width: 450px;
   min-height: 580px;
   padding: 40px;
   background-color: white;
@@ -838,12 +843,13 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 30;
 }
 
 .backdrop__modal {
   position: relative;
-  margin: auto;
   overflow-y: scroll;
+  margin: auto;
 }
 
 .form__title {
@@ -868,7 +874,7 @@ img {
 }
 
 .form__button {
-  margin: 0 123px;
+  margin: 0 auto;
 }
 
 .input {
@@ -966,10 +972,10 @@ img {
 }
 
 .checkbox__label {
-  margin: 20px 13px 30px;
-  font-size: 14px;
+  margin: 20px 0 30px;
+  font-size: 12px;
   font-weight: normal;
-  line-height: 1.71;
+  line-height: 1.17;
   color: #757575;
   cursor: pointer;
 }

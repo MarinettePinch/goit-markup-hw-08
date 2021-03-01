@@ -110,7 +110,7 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 
 /*media-variabels*/
 
-$container-width: 450px;
+$container-width: calc(100vw - 43px);
 
 $header-hight: 60px;
 $header-padding: 16px;
@@ -197,3 +197,9 @@ $tel-text-line-height: 1.14;*/
 $input-width: 100%;
 
 /*$input-width: 368px;*/
+
+$checkbox-text-size: 12px;
+$checkbox-line-height: 1.17;
+
+/*$checkbox-text-size: 14px;
+$checkbox-line-height: 1.71;*/
