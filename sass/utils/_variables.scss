@@ -110,102 +110,116 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 
 /*media-variabels*/
 
-$container-width: calc(100vw - 43px);
+:root {
+  --container-width: calc(100vw - 43px);
 
-$header-hight: 60px;
-$header-padding: 16px;
+  --header-hight: 60px;
+  --header-padding: 16px;
 
-$header-hight-tab: 80px;
-$header-padding-tab: 21px 15px;
+  --header-hight-tab: 80px;
+  --header-padding-tab: 21px 15px;
 
-$header-padding-dt: 24px 0;
+  --header-padding-dt: 24px 0;
 
-/*$display-address-btn: none*/
+  /*--display-address-btn: none*/
 
-$hero-hight: 400px;
+  --hero-hight: 400px;
 
-$hero-bg-img: url('../img/hero-bg-img.png');
+  --hero-bg-img: url('../img/hero-bg-img.png');
 
-$hero-bg-img2x: url('../img/hero-bg-img@2x.png');
+  --hero-bg-img2x: url('../img/hero-bg-img@2x.png');
 
-/*$hero-hight: 600px;*/
+  /*--hero-hight: 600px;*/
 
-$hero-padding: 118px 0;
+  --hero-padding: 118px 0;
 
-/*$hero-padding: 200px 0;*/
+  /*--hero-padding: 200px 0;*/
 
-$hero-title-size: 26px;
-$hero-title-line-height: 1.62;
+  --hero-title-size: 26px;
+  --hero-title-line-height: 1.62;
 
-$hero-title-width: 360px;
+  --hero-title-width: 360px;
 
-/*$hero-title-size: 44px;
-$hero-title-line-height: 1.36;
-$hero-title-width: 696px;*/
+  /*--hero-title-size: 44px;
+--hero-title-line-height: 1.36;
+--hero-title-width: 696px;*/
 
-$section-padding: 60px 0;
+  --section-padding: 60px 0;
 
-/*$section-padding: 94px 0;*/
+  /*--section-padding: 94px 0;*/
 
-$section-title-size: 28px;
+  --section-title-size: 28px;
 
-/*$section-title-size: 36px;*/
+  /*--section-title-size: 36px;*/
 
-$title-align: center;
-$title-pagging-bottom: 30px;
+  --title-align: center;
+  --title-pagging-bottom: 30px;
 
-/*$title-pagging-bottom: 50px;*/
+  /*--title-pagging-bottom: 50px;*/
 
-$card-width: calc(100%);
-$btn-width: calc(100% / 2 - 30px);
-$btn-width-tab: calc(100% / 3 - 30px);
-$card-width-dt: calc(100% / 4 - 30px);
-$btn-width-dt: calc(100% / 6 - 30px);
+  --card-width: calc(100%);
+  --btn-width: calc(100% / 2 - 30px);
+  --btn-width-tab: calc(100% / 3 - 30px);
+  --card-width-dt: calc(100% / 4 - 30px);
+  --btn-width-dt: calc(100% / 6 - 30px);
 
-$footer-heigth: 603px;
+  --footer-heigth: 603px;
 
-/*$footer-heigth: 252px;*/
+  /*--footer-heigth: 252px;*/
 
-/*navigation links*/
+  /*navigation links*/
 
-$manu-margin: 88px;
+  --manu-margin: 88px;
 
-$manu-margin-dt: 94px;
+  --manu-margin-dt: 94px;
 
-$nav-text-size: 40px;
-$nav-text-line-height: 1.17;
+  --nav-text-size: 40px;
+  --nav-text-line-height: 1.17;
 
-$nav-text-size-tab: 14px;
-$nav-text-line-height-tab: 1.14;
+  --nav-text-size-tab: 14px;
+  --nav-text-line-height-tab: 1.14;
 
-/*e-mail*/
+  /*e-mail*/
 
-$mail-text-size: 24px;
-$mail-text-line-height: 1.16;
+  --mail-text-size: 24px;
+  --mail-text-line-height: 1.16;
 
-/*phone namber*/
+  /*phone namber*/
 
-$tel-text-size: 34px;
-$tel-text-line-height: 1.18;
+  --tel-text-size: 34px;
+  --tel-text-line-height: 1.18;
 
-$tel-text-size-tab: 12px;
-$tel-text-line-height-tab: 1.17;
+  --tel-text-size-tab: 12px;
+  --tel-text-line-height-tab: 1.17;
 
-$tel-text-size-dt: 14px;
-$tel-text-line-heigh-dt: 1.14;
+  --tel-text-size-dt: 14px;
+  --tel-text-line-heigh-dt: 1.14;
 
-/*address margin*/
+  /*address margin*/
 
-$address-m-b: 32px;
+  --address-m-b: 32px;
 
-$address-m-r: 50px;
+  --address-m-r: 50px;
 
-$input-width: 100%;
+  --input-width: 100%;
 
-/*$input-width: 368px;*/
+  /*--input-width: 368px;*/
 
-$checkbox-text-size: 12px;
-$checkbox-line-height: 1.17;
+  --checkbox-text-size: 12px;
+  --checkbox-line-height: 1.17;
 
-/*$checkbox-text-size: 14px;
+  /*$checkbox-text-size: 14px;
 $checkbox-line-height: 1.71;*/
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --nav-text-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --tel-text-line-heigh: 1.14;
+  }
+}
