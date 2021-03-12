@@ -10,25 +10,31 @@
   flex-direction: column-reverse;
   @media screen and (min-width: 768px) {
     flex-direction: column;
+    margin-left: 84px;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     align-items: center;
+    margin-left: 305px;
   }
 }
 
 .address__list {
   @extend %list;
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .address__list--row {
   display: flex;
-  &:not(:first-child) {
-    margin-bottom: var(--address-m-b);
-  }
   &:not(:last-child) {
     margin-right: var(--address-m-r);
+  }
+  @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+      margin-bottom: var(--address-m-b);
+    }
   }
 }
 
@@ -69,9 +75,7 @@
 }
 
 .address__span {
-  @media screen and (min-width: 768px) {
-    margin-left: 10px;
-  }
+  margin-left: var(--span-margin-l);
 }
 
 .address--size-s {

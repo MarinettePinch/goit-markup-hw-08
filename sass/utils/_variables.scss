@@ -118,10 +118,11 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 :root {
   --container-width: 100%;
 
-  --header-padding: 16px;
+  --header-padding: 16px 0;
   --header-hight: 60px;
 
-  /*--display-address-btn: none*/
+  --logo-text-size: 24px;
+  --logo-line-height: 1.17;
 
   --hero-bg-img: url('../img/hero-bg-img.png');
   --hero-bg-img2x: url('../img/hero-bg-img@2x.png');
@@ -147,7 +148,9 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 
   /*navigation links*/
 
-  --manu-margin: 0;
+  --menu-margin: 0;
+
+  --span-margin-l: 0;
 
   --nav-text-size: 40px;
   --nav-text-line-height: 1.17;
@@ -185,10 +188,14 @@ $checkbox-line-height: 1.71;*/
   :root {
     --container-width: 768px;
 
-    --header-padding: 21px 15px;
+    --header-padding: 21px 0;
     --header-hight: 80px;
 
-    --manu-margin: 88px;
+    --menu-margin: 88px;
+
+    --nav-margin-r: 50px;
+
+    --span-margin-l: 8px;
 
     --card-width: calc(100% / 2 - 30px);
     --card-width-wide: calc(100% / 2 - 30px);
@@ -208,6 +215,11 @@ $checkbox-line-height: 1.71;*/
     --container-width: 1200px;
 
     --header-padding: 24px 0;
+
+    --logo-text-size: 26px;
+    --logo-line-height: 1.19;
+
+    --span-margin-l: 10px;
 
     --hero-hight: 600px;
     --hero-padding: 200px 0;
@@ -229,7 +241,7 @@ $checkbox-line-height: 1.71;*/
 
     --nav-text-size: 14px;
 
-    --manu-margin: 94px;
+    --menu-margin: 94px;
 
     --tel-text-size: 14px;
     --tel-text-line-heigh: 1.14;
@@ -240,12 +252,14 @@ $checkbox-line-height: 1.71;*/
 
 @media screen and (max-width: 767px) {
   :root {
+    --nav-margin-b: 32px;
     /*--nav-text-size: 14px;*/
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   :root {
+    --address-m-r: 0;
     /*--tel-text-line-heigh: 1.14;*/
   }
 }

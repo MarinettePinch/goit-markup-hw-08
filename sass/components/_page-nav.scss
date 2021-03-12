@@ -25,12 +25,8 @@
   height: var(--nav-text-size);
   width: auto;
   &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: var(--address-m-b);
-    }
-    @media screen and (min-width: 768px) {
-      margin-right: var(--address-m-r);
-    }
+    margin-bottom: var(--nav-margin-b);
+    margin-right: var(--nav-margin-r);
   }
 }
 

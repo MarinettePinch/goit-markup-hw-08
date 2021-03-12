@@ -75,7 +75,8 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: $hover-text-color;
-  margin-top: 28px;
+  margin-top: 27px;
+  z-index: 100;
 
   @media screen and (max-width: 767px) {
     display: none;

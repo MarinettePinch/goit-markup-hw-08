@@ -20,9 +20,10 @@
 /*media-variabels*/
 :root {
   --container-width: 100%;
-  --header-padding: 16px;
+  --header-padding: 16px 0;
   --header-hight: 60px;
-  /*--display-address-btn: none*/
+  --logo-text-size: 24px;
+  --logo-line-height: 1.17;
   --hero-bg-img: url('../img/hero-bg-img.png');
   --hero-bg-img2x: url('../img/hero-bg-img@2x.png');
   --hero-hight: 400px;
@@ -39,7 +40,8 @@
   --btn-width: calc(100% / 2 - 30px);
   --footer-heigth: 603px;
   /*navigation links*/
-  --manu-margin: 0;
+  --menu-margin: 0;
+  --span-margin-l: 0;
   --nav-text-size: 40px;
   --nav-text-line-height: 1.17;
   /*phone namber*/
@@ -66,9 +68,11 @@ $checkbox-line-height: 1.71;*/
 @media screen and (min-width: 768px) {
   :root {
     --container-width: 768px;
-    --header-padding: 21px 15px;
+    --header-padding: 21px 0;
     --header-hight: 80px;
-    --manu-margin: 88px;
+    --menu-margin: 88px;
+    --nav-margin-r: 50px;
+    --span-margin-l: 8px;
     --card-width: calc(100% / 2 - 30px);
     --card-width-wide: calc(100% / 2 - 30px);
     --btn-width: calc(100% / 3 - 30px);
@@ -83,6 +87,9 @@ $checkbox-line-height: 1.71;*/
   :root {
     --container-width: 1200px;
     --header-padding: 24px 0;
+    --logo-text-size: 26px;
+    --logo-line-height: 1.19;
+    --span-margin-l: 10px;
     --hero-hight: 600px;
     --hero-padding: 200px 0;
     --hero-title-size: 44px;
@@ -96,7 +103,7 @@ $checkbox-line-height: 1.71;*/
     --btn-width: calc(100% / 6 - 30px);
     --footer-heigth: 252px;
     --nav-text-size: 14px;
-    --manu-margin: 94px;
+    --menu-margin: 94px;
     --tel-text-size: 14px;
     --tel-text-line-heigh: 1.14;
     --input-width: 368px;
@@ -105,12 +112,14 @@ $checkbox-line-height: 1.71;*/
 
 @media screen and (max-width: 767px) {
   :root {
+    --nav-margin-b: 32px;
     /*--nav-text-size: 14px;*/
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   :root {
+    --address-m-r: 0;
     /*--tel-text-line-heigh: 1.14;*/
   }
 }
@@ -210,7 +219,8 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-  margin-top: 28px;
+  margin-top: 27px;
+  z-index: 100;
 }
 
 @media screen and (max-width: 767px) {
@@ -232,6 +242,9 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -320,24 +333,19 @@ img {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: var(--logo-text-size);
+  line-height: var(--logo-line-height);
   letter-spacing: 0.03em;
   display: inline-block;
-  width: 145px;
-  height: 31px;
-  color: #2196f3;
-}
-
-.logo__acsent {
   color: #212121;
 }
 
-.logo__acsent--inversion {
-  color: white;
+.logo__acsent {
+  color: #2196f3;
 }
 
 .footer__logo {
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -385,16 +393,9 @@ img {
   width: auto;
 }
 
-@media screen and (max-width: 767px) {
-  .page-nav__list:not(:last-child) {
-    margin-bottom: var(--address-m-b);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-nav__list:not(:last-child) {
-    margin-right: var(--address-m-r);
-  }
+.page-nav__list:not(:last-child) {
+  margin-bottom: var(--nav-margin-b);
+  margin-right: var(--nav-margin-r);
 }
 
 .page-nav__link {
@@ -436,6 +437,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 84px;
   }
 }
 
@@ -448,11 +450,12 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 305px;
   }
 }
 
-.address__list {
-  margin-bottom: 9px;
+.address__list:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .address__list--row {
@@ -461,12 +464,14 @@ img {
   display: flex;
 }
 
-.address__list--row:not(:first-child) {
-  margin-bottom: var(--address-m-b);
-}
-
 .address__list--row:not(:last-child) {
   margin-right: var(--address-m-r);
+}
+
+@media screen and (max-width: 767px) {
+  .address__list--row:not(:first-child) {
+    margin-bottom: var(--address-m-b);
+  }
 }
 
 .address__link {
@@ -514,10 +519,8 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
-  .address__span {
-    margin-left: 10px;
-  }
+.address__span {
+  margin-left: var(--span-margin-l);
 }
 
 @media screen and (max-width: 767px) {

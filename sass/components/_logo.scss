@@ -3,23 +3,18 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: var(--logo-text-size);
+  line-height: var(--logo-line-height);
   letter-spacing: 0.03em;
   display: inline-block;
-  width: 145px;
-  height: 31px;
-  color: $hover-text-color;
-}
-
-.logo__acsent {
   color: $primary-text-color;
 }
 
-.logo__acsent--inversion {
-  color: $light-text-color;
+.logo__acsent {
+  color: $hover-text-color;
 }
 
 .footer__logo {
+  color: $light-text-color;
   margin-bottom: 20px;
 }
