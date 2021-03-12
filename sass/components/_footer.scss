@@ -1,6 +1,7 @@
 .footer {
+  overflow: hidden;
   text-align: center;
-  height: $footer-heigth;
+  height: var(--footer-heigth);
   background-color: $primary-background-color;
   color: $light-text-color;
   padding-top: $footer-padding-top;

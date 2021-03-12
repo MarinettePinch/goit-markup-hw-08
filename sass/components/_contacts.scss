@@ -25,10 +25,10 @@
 .address__list--row {
   display: flex;
   &:not(:first-child) {
-    margin-bottom: $address-m-b;
+    margin-bottom: var(--address-m-b);
   }
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-right: var(--address-m-r);
   }
 }
 
@@ -38,8 +38,8 @@
 }
 
 .address__link--row {
-  font-size: $tel-text-size;
-  line-height: $tel-text-line-height;
+  font-size: var(--tel-text-size);
+  line-height: var(--tel-text-line-height);
   font-weight: $header-text-weight;
   letter-spacing: $header-letter-spacing;
   font-style: normal;
@@ -47,8 +47,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    font-size: $tel-text-size-tab;
-    line-height: $tel-text-line-height-tab;
     color: $grey-text-color;
     transition: color $transition-animation;
     &:hover,
@@ -88,6 +86,8 @@
   display: none;
   @media screen and (max-width: 767px) {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: start;
     margin-top: 64px;
   }

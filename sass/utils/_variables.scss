@@ -11,7 +11,7 @@ $border-color: rgba(238, 238, 238, 1);
 $hero-background-color: rgba(196, 196, 196, 1);
 $gradient-background-color: rgba(47, 48, 58, 0.4);
 $icons-color: rgba(175, 177, 184, 1);
-$backdrop-bg-color: rgba(255, 255, 255, 0.2);
+$backdrop-bg-color: rgba(0, 0, 0, 0.2);
 $icons-bg-footer-color: rgba(255, 255, 255, 0.1);
 $caption-bg-color: rgba(47, 48, 58, 0.8);
 
@@ -92,6 +92,11 @@ $button-text-line-height: 1.87;
 $header-text-weight: 500;
 $header-letter-spacing: 0.02em;
 
+/*e-mail*/
+
+$mail-text-size: 24px;
+$mail-text-line-height: 1.16;
+
 /*Geometry*/
 
 $radius: 4px;
@@ -111,89 +116,46 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 /*media-variabels*/
 
 :root {
-  --container-width: calc(100vw - 43px);
+  --container-width: 100%;
 
-  --header-hight: 60px;
   --header-padding: 16px;
-
-  --header-hight-tab: 80px;
-  --header-padding-tab: 21px 15px;
-
-  --header-padding-dt: 24px 0;
+  --header-hight: 60px;
 
   /*--display-address-btn: none*/
 
-  --hero-hight: 400px;
-
   --hero-bg-img: url('../img/hero-bg-img.png');
-
   --hero-bg-img2x: url('../img/hero-bg-img@2x.png');
-
-  /*--hero-hight: 600px;*/
-
-  --hero-padding: 118px 0;
-
-  /*--hero-padding: 200px 0;*/
+  --hero-hight: 400px;
+  --hero-padding: 118px 15px;
 
   --hero-title-size: 26px;
   --hero-title-line-height: 1.62;
-
-  --hero-title-width: 360px;
-
-  /*--hero-title-size: 44px;
---hero-title-line-height: 1.36;
---hero-title-width: 696px;*/
+  --hero-title-width: 100%;
 
   --section-padding: 60px 0;
-
-  /*--section-padding: 94px 0;*/
-
   --section-title-size: 28px;
-
-  /*--section-title-size: 36px;*/
 
   --title-align: center;
   --title-pagging-bottom: 30px;
 
-  /*--title-pagging-bottom: 50px;*/
-
   --card-width: calc(100%);
+  --card-width-wide: calc(100%);
+
   --btn-width: calc(100% / 2 - 30px);
-  --btn-width-tab: calc(100% / 3 - 30px);
-  --card-width-dt: calc(100% / 4 - 30px);
-  --btn-width-dt: calc(100% / 6 - 30px);
 
   --footer-heigth: 603px;
 
-  /*--footer-heigth: 252px;*/
-
   /*navigation links*/
 
-  --manu-margin: 88px;
-
-  --manu-margin-dt: 94px;
+  --manu-margin: 0;
 
   --nav-text-size: 40px;
   --nav-text-line-height: 1.17;
-
-  --nav-text-size-tab: 14px;
-  --nav-text-line-height-tab: 1.14;
-
-  /*e-mail*/
-
-  --mail-text-size: 24px;
-  --mail-text-line-height: 1.16;
 
   /*phone namber*/
 
   --tel-text-size: 34px;
   --tel-text-line-height: 1.18;
-
-  --tel-text-size-tab: 12px;
-  --tel-text-line-height-tab: 1.17;
-
-  --tel-text-size-dt: 14px;
-  --tel-text-line-heigh-dt: 1.14;
 
   /*address margin*/
 
@@ -203,8 +165,6 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 
   --input-width: 100%;
 
-  /*--input-width: 368px;*/
-
   --checkbox-text-size: 12px;
   --checkbox-line-height: 1.17;
 
@@ -212,14 +172,80 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 $checkbox-line-height: 1.71;*/
 }
 
+@media screen and (min-width: 480px) {
+  :root {
+    --container-width: 480px;
+
+    --hero-title-width: 360px;
+    --hero-padding: 118px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --container-width: 768px;
+
+    --header-padding: 21px 15px;
+    --header-hight: 80px;
+
+    --manu-margin: 88px;
+
+    --card-width: calc(100% / 2 - 30px);
+    --card-width-wide: calc(100% / 2 - 30px);
+
+    --btn-width: calc(100% / 3 - 30px);
+
+    --nav-text-size: 14px;
+    --nav-text-line-height: 1.14;
+
+    --tel-text-size: 12px;
+    --tel-text-line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --container-width: 1200px;
+
+    --header-padding: 24px 0;
+
+    --hero-hight: 600px;
+    --hero-padding: 200px 0;
+    --hero-title-size: 44px;
+    --hero-title-line-height: 1.36;
+    --hero-title-width: 696px;
+
+    --section-padding: 94px 0;
+    --section-title-size: 36px;
+
+    --title-pagging-bottom: 50px;
+
+    --card-width: calc(100% / 4 - 30px);
+    --card-width-wide: calc(100% / 3 - 30px);
+
+    --btn-width: calc(100% / 6 - 30px);
+
+    --footer-heigth: 252px;
+
+    --nav-text-size: 14px;
+
+    --manu-margin: 94px;
+
+    --tel-text-size: 14px;
+    --tel-text-line-heigh: 1.14;
+
+    --input-width: 368px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   :root {
-    --nav-text-size: 14px;
+    /*--nav-text-size: 14px;*/
   }
 }
 
 @media screen and (max-width: 1200px) {
   :root {
-    --tel-text-line-heigh: 1.14;
+    /*--tel-text-line-heigh: 1.14;*/
   }
 }

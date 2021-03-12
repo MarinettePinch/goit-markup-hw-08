@@ -12,7 +12,7 @@
 
 .buttons--round {
   margin: auto;
-  width: 206px;
+  max-width: 206px;
 }
 
 .buttons--margin-l {
@@ -36,13 +36,14 @@
 }
 
 .buttons__list--margin-l {
-  flex-basis: $btn-width;
+  flex-basis: var(--btn-width);
   margin-right: $lattice-margin;
   margin-bottom: $lattice-margin;
 }
 
 .buttons__list--social {
   @extend %flex-c;
+  flex-wrap: nowrap;
   &:not(:last-child) {
     margin-right: 10px;
   }

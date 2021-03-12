@@ -1,18 +1,18 @@
 .hero {
-  width: 100%;
-  min-height: $hero-hight;
+  overflow: hidden;
+  min-height: var(--hero-hight);
   text-align: center;
   background-color: $hero-background-color;
   background-image: linear-gradient(
       $gradient-background-color,
       $gradient-background-color
     ),
-    $hero-bg-img;
+    var(--hero-bg-img);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  padding: $hero-padding;
-  margin-bottom: $section-padding;
+  padding: var(--hero-padding);
+  margin-bottom: var(--section-padding);
   /*@extend %flex-c;*/
   /*flex-direction: column;*/
 }
@@ -23,17 +23,17 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: $hero-bg-img2x;
+    background-image: var(--hero-bg-img2x);
   }
 }
 
 .hero__title {
   display: inline-block;
-  font-size: $hero-title-size;
+  font-size: var(--hero-title-size);
   font-weight: $hero-title-weight;
-  line-height: $hero-title-line-height;
+  line-height: var(--hero-title-line-height);
   letter-spacing: $hero-title-letter-spacing;
   color: $light-text-color;
   margin-bottom: $lattice-margin;
-  width: $hero-title-width;
+  width: var(--hero-title-width);
 }

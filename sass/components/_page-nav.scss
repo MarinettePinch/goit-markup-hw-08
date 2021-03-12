@@ -22,14 +22,14 @@
   text-align: start;
   position: relative;
   display: block;
-  height: $nav-text-size;
+  height: var(--nav-text-size);
   width: auto;
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
-      margin-bottom: $address-m-b;
+      margin-bottom: var(--address-m-b);
     }
     @media screen and (min-width: 768px) {
-      margin-right: $address-m-r;
+      margin-right: var(--address-m-r);
     }
   }
 }
@@ -37,8 +37,8 @@
 .page-nav__link {
   @extend %link;
   display: block;
-  font-size: $nav-text-size;
-  line-height: $nav-text-line-height;
+  font-size: var(--nav-text-size);
+  line-height: var(--nav-text-line-height);
   font-weight: $header-text-weight;
   letter-spacing: $header-letter-spacing;
   color: $primary-text-color;
@@ -57,9 +57,5 @@
     &::after {
       @extend %underline;
     }
-  }
-  @media screen and (min-width: 768px) {
-    font-size: $nav-text-size-tab;
-    line-height: $nav-text-line-height-tab;
   }
 }

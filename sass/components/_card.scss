@@ -1,23 +1,11 @@
 .card {
-  width: $card-width;
+  width: var(--card-width);
   background-color: $light-text-color;
   position: relative;
-  @media screen and (min-width: 768px) {
-    width: $btn-width;
-  }
-  @media screen and (min-width: 1200px) {
-    width: $btn-width-dt;
-  }
 }
 
 .card--wide {
-  width: $card-width;
-  @media screen and (min-width: 768px) {
-    width: $btn-width;
-  }
-  @media screen and (min-width: 1200px) {
-    width: $btn-width-tab;
-  }
+  width: var(--card-width-wide);
 }
 
 .card__image-box {
@@ -72,7 +60,7 @@
 }
 
 .card__title--s {
-  text-align: $title-align;
+  text-align: var(--title-align);
   font-size: $card-title-size-s;
   font-weight: $card-title-s-weight;
   line-height: $card-title-s-line-height;

@@ -10,7 +10,7 @@
 
 .cards__list {
   @extend %list;
-  flex-basis: $card-width;
+  /*flex-basis: $card-width;*/
   color: $grey-text-color;
   margin-right: $lattice-margin;
   margin-bottom: $lattice-margin;

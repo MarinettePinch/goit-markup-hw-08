@@ -1,8 +1,9 @@
 .menu {
   @extend %flex-sb;
-  margin-left: $manu-margin;
+  margin-left: var(--manu-margin);
   &.is-open {
     display: flex;
+    background-color: $light-text-color;
   }
   @media screen and (max-width: 767px) {
     display: none;
@@ -11,10 +12,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     min-height: 796px;
+    width: 100%;
     padding: 48px 40px;
-    background-color: $light-text-color;
     z-index: 10;
   }
 }

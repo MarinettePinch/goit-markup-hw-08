@@ -1,6 +1,7 @@
 .section {
+  overflow: hidden;
   width: 100%;
-  padding: $section-padding;
+  padding: var(--section-padding);
 }
 
 .section--hidden {
@@ -16,12 +17,12 @@
 }
 
 .section__title {
-  font-size: $section-title-size;
+  font-size: var(--section-title-size);
   font-weight: $section-title-weight;
   letter-spacing: $text-s-letter-spacing;
-  padding-bottom: $title-pagging-bottom;
+  padding-bottom: var(--title-pagging-bottom);
 }
 
 .section__buttons--center {
-  margin-bottom: $title-pagging-bottom;
+  padding-bottom: var(--title-pagging-bottom);
 }

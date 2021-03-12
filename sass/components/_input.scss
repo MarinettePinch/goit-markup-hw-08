@@ -35,7 +35,7 @@
 
 .input--inversion {
   height: 50px;
-  width: $input-width;
+  width: var(--input-width);
   color: $light-text-color;
   font-size: $text-size;
   line-height: 1.25;
