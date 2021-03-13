@@ -1,11 +1,7 @@
 .card {
-  width: var(--card-width);
+  width: 100%;
   background-color: $light-text-color;
   position: relative;
-}
-
-.card--wide {
-  width: var(--card-width-wide);
 }
 
 .card__image-box {
@@ -33,6 +29,9 @@
 
 .card__caption--low {
   padding: 30px 0 0 0;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .card__caption--inversion {
@@ -49,6 +48,12 @@
   padding: 20px 24px;
   border: 1px solid $border-color;
   border-top: 0;
+}
+
+.card__caption--wide {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 54px;
+  }
 }
 
 .card__title {
@@ -70,11 +75,13 @@
   font-size: $card-title-size-l;
   font-weight: $card-title-l-weight;
   line-height: $card-title-l-line-height;
+  letter-spacing: $card-title-l-letter-spacing;
   padding-bottom: 4px;
 }
 
 .card__title--inverse {
   color: $light-text-color;
+  text-align: center;
   padding-bottom: 0;
 }
 

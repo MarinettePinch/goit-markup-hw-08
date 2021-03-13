@@ -2,14 +2,6 @@
   @extend %flex-sb;
 }
 
-.section__buttons {
-  @extend %flex-st;
-  margin-bottom: 32px;
-  margin-right: -8px;
-  /*@extend %flex-c;
-  margin-bottom: -8px;*/
-}
-
 .buttons--round {
   margin: auto;
   max-width: 206px;

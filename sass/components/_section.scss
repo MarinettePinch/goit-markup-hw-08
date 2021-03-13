@@ -5,12 +5,16 @@
 }
 
 .section--hidden {
-  display: none;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
-/*.section--low {
-  padding: 0;
-}*/
+.section--low {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
 
 .section--grey {
   background-color: $secondry-background-color;
@@ -23,6 +27,12 @@
   padding-bottom: var(--title-pagging-bottom);
 }
 
-.section__buttons--center {
-  padding-bottom: var(--title-pagging-bottom);
+.section__buttons {
+  @extend %flex-st;
+  margin-bottom: -8px;
+  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: var(--title-pagging-bottom);
+    justify-content: center;
+  }
 }

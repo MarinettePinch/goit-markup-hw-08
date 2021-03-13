@@ -10,25 +10,25 @@
 
 .cards__list {
   @extend %list;
-  /*flex-basis: $card-width;*/
+  flex-basis: var(--card-width);
   color: $grey-text-color;
   margin-right: $lattice-margin;
   margin-bottom: $lattice-margin;
+}
+
+.cards__list--wide {
+  flex-basis: var(--card-width-wide);
 }
 
 .cards__list--with-shadow {
   box-shadow: $shadow;
 }
 
-.cards__list--multi-row {
-  margin-bottom: $lattice-margin;
-}
-
 .cards__link {
   @extend %link;
   display: inline-block;
   width: 100%;
-  min-height: 404px;
+  /*min-height: 404px;*/
   color: currentColor;
   transition: box-shadow $transition-animation;
   &:hover,

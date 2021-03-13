@@ -35,8 +35,8 @@
   --section-title-size: 28px;
   --title-align: center;
   --title-pagging-bottom: 30px;
-  --card-width: calc(100%);
-  --card-width-wide: calc(100%);
+  --card-width: 100%;
+  --card-width-wide: 100%;
   --btn-width: calc(100% / 2 - 30px);
   --footer-heigth: 603px;
   /*navigation links*/
@@ -73,9 +73,12 @@ $checkbox-line-height: 1.71;*/
     --menu-margin: 88px;
     --nav-margin-r: 50px;
     --span-margin-l: 8px;
-    --card-width: calc(100% / 2 - 30px);
-    --card-width-wide: calc(100% / 2 - 30px);
-    --btn-width: calc(100% / 3 - 30px);
+    --hero-bg-img: url('../img/hero-bg-img2.png');
+    --hero-bg-img2x: url('../img/hero-bg-img2@2x.png');
+    --card-width: calc((100% - 60px) / 2);
+    --card-width-wide: calc((100% - 60px) / 2);
+    --title-align: start;
+    --btn-width: calc((100% - 90px) / 3);
     --nav-text-size: 14px;
     --nav-text-line-height: 1.14;
     --tel-text-size: 12px;
@@ -95,12 +98,14 @@ $checkbox-line-height: 1.71;*/
     --hero-title-size: 44px;
     --hero-title-line-height: 1.36;
     --hero-title-width: 696px;
+    --hero-bg-img: url('../img/hero-bg-img3.png');
+    --hero-bg-img2x: url('../img/hero-bg-img3@2x.png');
     --section-padding: 94px 0;
     --section-title-size: 36px;
     --title-pagging-bottom: 50px;
-    --card-width: calc(100% / 4 - 30px);
-    --card-width-wide: calc(100% / 3 - 30px);
-    --btn-width: calc(100% / 6 - 30px);
+    --card-width: calc((100% - 120px) / 4);
+    --card-width-wide: calc((100% - 90px) / 3);
+    --btn-width: calc((100% - 180px) / 6);
     --footer-heigth: 252px;
     --nav-text-size: 14px;
     --menu-margin: 94px;
@@ -165,7 +170,7 @@ img {
       flex-wrap: wrap;
 }
 
-.page-nav__items, .address__items--row, .section__buttons {
+.section__buttons, .page-nav__items, .address__items--row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,13 +290,18 @@ img {
   padding: var(--section-padding);
 }
 
-.section--hidden {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .section--hidden {
+    display: none;
+  }
 }
 
-/*.section--low {
-  padding: 0;
-}*/
+@media screen and (min-width: 1200px) {
+  .section--low {
+    padding-bottom: 0;
+  }
+}
+
 .section--grey {
   background-color: #f5f4fa;
 }
@@ -303,8 +313,18 @@ img {
   padding-bottom: var(--title-pagging-bottom);
 }
 
-.section__buttons--center {
-  padding-bottom: var(--title-pagging-bottom);
+.section__buttons {
+  margin-bottom: -8px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .section__buttons {
+    padding-bottom: var(--title-pagging-bottom);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .container {
@@ -598,10 +618,16 @@ img {
 }
 
 .cards__list {
-  /*flex-basis: $card-width;*/
+  -ms-flex-preferred-size: var(--card-width);
+      flex-basis: var(--card-width);
   color: #757575;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.cards__list--wide {
+  -ms-flex-preferred-size: var(--card-width-wide);
+      flex-basis: var(--card-width-wide);
 }
 
 .cards__list--with-shadow {
@@ -609,14 +635,10 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.cards__list--multi-row {
-  margin-bottom: 30px;
-}
-
 .cards__link {
   display: inline-block;
   width: 100%;
-  min-height: 404px;
+  /*min-height: 404px;*/
   color: currentColor;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -630,13 +652,9 @@ img {
 }
 
 .card {
-  width: var(--card-width);
+  width: 100%;
   background-color: white;
   position: relative;
-}
-
-.card--wide {
-  width: var(--card-width-wide);
 }
 
 .card__image-box {
@@ -666,6 +684,12 @@ img {
   padding: 30px 0 0 0;
 }
 
+@media screen and (min-width: 768px) {
+  .card__caption--low {
+    text-align: start;
+  }
+}
+
 .card__caption--inversion {
   color: white;
   width: 100%;
@@ -680,6 +704,12 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__caption--wide {
+    padding-bottom: 54px;
+  }
 }
 
 .card__title {
@@ -701,11 +731,13 @@ img {
   font-size: 18px;
   font-weight: bold;
   line-height: 2;
+  letter-spacing: 0.06em;
   padding-bottom: 4px;
 }
 
 .card__title--inverse {
   color: white;
+  text-align: center;
   padding-bottom: 0;
 }
 
@@ -759,13 +791,6 @@ img {
   font-size: 18px;
   line-height: 1.56;
   color: white;
-}
-
-.section__buttons {
-  margin-bottom: 32px;
-  margin-right: -8px;
-  /*@extend %flex-c;
-  margin-bottom: -8px;*/
 }
 
 .buttons--round {
