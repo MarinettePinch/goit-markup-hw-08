@@ -150,6 +150,8 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 
   --menu-margin: 0;
 
+  --address-margin: 0;
+
   --span-margin-l: 0;
 
   --nav-text-size: 40px;
@@ -160,11 +162,6 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   --tel-text-size: 34px;
   --tel-text-line-height: 1.18;
 
-  /*address margin*/
-
-  --address-m-b: 32px;
-
-  --address-m-r: 50px;
 
   /*form*/
 
@@ -196,6 +193,7 @@ $checkbox-line-height: 1.71;*/
     --header-hight: 80px;
 
     --menu-margin: 88px;
+    --address-margin: 84px;
 
     --nav-margin-r: 50px;
 
@@ -226,6 +224,9 @@ $checkbox-line-height: 1.71;*/
     --container-width: 1200px;
 
     --header-padding: 24px 0;
+
+    --menu-margin: 93px;
+    --address-margin: 305px;
 
     --logo-text-size: 26px;
     --logo-line-height: 1.19;
@@ -270,7 +271,6 @@ $checkbox-line-height: 1.71;*/
 @media screen and (max-width: 767px) {
   :root {
     --nav-margin-b: 32px;
-    /*--nav-text-size: 14px;*/
   }
 }
 
