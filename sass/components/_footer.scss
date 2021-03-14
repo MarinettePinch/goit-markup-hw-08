@@ -1,7 +1,6 @@
 .footer {
   overflow: hidden;
   text-align: center;
-  /*  height: var(--footer-heigth);*/
   background-color: $primary-background-color;
   color: $light-text-color;
 }
@@ -13,8 +12,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  /*@extend %flex-sb;*/
-  /*align-items: flex-start;*/
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer__item {

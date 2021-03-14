@@ -262,15 +262,12 @@ img {
 .footer {
   overflow: hidden;
   text-align: center;
-  /*  height: var(--footer-heigth);*/
   background-color: #2f303a;
   color: white;
 }
 
 .footer__list {
   padding: var(--footer-padding);
-  /*@extend %flex-sb;*/
-  /*align-items: flex-start;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -282,6 +279,12 @@ img {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    text-align: start;
   }
 }
 
