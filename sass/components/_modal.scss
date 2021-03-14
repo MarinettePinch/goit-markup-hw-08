@@ -1,6 +1,6 @@
 .modal {
   z-index: 30;
-  width: 450px;
+  width: var(--modal-width);
   min-height: 580px;
   padding: 40px;
   background-color: $light-text-color;

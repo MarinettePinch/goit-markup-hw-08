@@ -71,13 +71,11 @@ img {
 %underline {
   content: '';
   display: inline-block;
-  position: relative;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: $hover-text-color;
-  margin-top: 27px;
-  z-index: 100;
+  margin-top: 28px;
 
   @media screen and (max-width: 767px) {
     display: none;
