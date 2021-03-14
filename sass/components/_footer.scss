@@ -1,20 +1,44 @@
 .footer {
   overflow: hidden;
   text-align: center;
-  height: var(--footer-heigth);
+  /*  height: var(--footer-heigth);*/
   background-color: $primary-background-color;
   color: $light-text-color;
-  padding-top: $footer-padding-top;
+}
+.footer__list {
+  @extend %list;
+  padding: var(--footer-padding);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   /*@extend %flex-sb;*/
   /*align-items: flex-start;*/
 }
 
-/*.footer__address {
-  align-items: inherit;
-}*/
-
-.footer__social {
-  /*padding-right: 23px;*/
+.footer__item {
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(2) {
+      padding: 5px 14px 0 70px;
+      @media screen and (max-width: 1199px) {
+        margin-left: 110px;
+      }
+    }
+    &:nth-child(3) {
+      padding-left: 14px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(3) {
+      margin-left: 78px;
+    }
+  }
 }
 
 .footer__title {
@@ -22,8 +46,10 @@
   font-weight: $card-title-s-weight;
   line-height: $card-title-s-line-height;
   margin-bottom: 20px;
-  margin-top: $footer-padding-top;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer__button {

@@ -31,7 +31,6 @@ $section-title-line-height: 1.17;
 
 $form-title-size: 20px;
 $form-title-weight: bold;
-$form-title-line-height: 1.15;
 
 /*h4*/
 
@@ -100,7 +99,7 @@ $mail-text-line-height: 1.16;
 /*Geometry*/
 
 $radius: 4px;
-$footer-padding-top: 60px;
+$footer-padding: 60px 0;
 $lattice-margin: 30px;
 $image-box-height: 294px;
 
@@ -145,6 +144,7 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   --btn-width: calc(100% / 2 - 30px);
 
   --footer-heigth: 603px;
+  --footer-padding: 60px 0;
 
   /*navigation links*/
 
@@ -165,6 +165,10 @@ $shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   --address-m-b: 32px;
 
   --address-m-r: 50px;
+
+  /*form*/
+
+  --form-title-line-height: 1.5;
 
   --input-width: 100%;
 
@@ -207,6 +211,8 @@ $checkbox-line-height: 1.71;*/
 
     --btn-width: calc((100% - 90px) / 3);
 
+    --footer-padding: 60px;
+
     --nav-text-size: 14px;
     --nav-text-line-height: 1.14;
 
@@ -246,6 +252,7 @@ $checkbox-line-height: 1.71;*/
     --btn-width: calc((100% - 180px) / 6);
 
     --footer-heigth: 252px;
+    --footer-padding: 60px 0;
 
     --nav-text-size: 14px;
 
@@ -255,6 +262,8 @@ $checkbox-line-height: 1.71;*/
     --tel-text-line-heigh: 1.14;
 
     --input-width: 368px;
+
+    --form-title-line-height: 1.15;
   }
 }
 

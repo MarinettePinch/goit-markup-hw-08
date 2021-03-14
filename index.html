@@ -560,90 +560,95 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__contacts">
-          <a class="logo footer__logo" href="./index.html">
-            <span class="logo__acsent">Web</span>Studio
-          </a>
-          <address class="address footer__address">
-            <ul class="address__items">
-              <li class="address__list">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="address__list">
-                <a class="address__link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="logo footer__logo" href="./index.html">
+              <span class="logo__acsent">Web</span>Studio
+            </a>
+            <address class="address footer__address">
+              <ul class="address__items">
+                <li class="address__list">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="address__list">
+                  <a class="address__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__list">
+                  <a class="address__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </li>
+          <li class="footer__item">
+            <h6 class="footer__title title--upp">присоединяйтесь</h6>
+            <ul class="buttons buttons--round footer__buttons">
+              <li class="buttons buttons__list--round">
+                <a class="button button--round button--inversion" href="#">
+                  <svg width="20" height="20">
+                    <use
+                      class="button__icon"
+                      href="./img/sprite.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__list">
-                <a class="address__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="buttons buttons__list--round">
+                <a class="button button--round button--inversion" href="#">
+                  <svg width="20" height="20">
+                    <use
+                      class="button__icon"
+                      href="./img/sprite.svg#twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="buttons buttons__list--round">
+                <a class="button button--round button--inversion" href="#">
+                  <svg width="20" height="20">
+                    <use
+                      class="button__icon"
+                      href="./img/sprite.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="buttons buttons__list--round">
+                <a class="button button--round button--inversion" href="#">
+                  <svg width="20" height="20">
+                    <use
+                      class="button__icon"
+                      href="./img/sprite.svg#linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social footer__social">
-          <h6 class="footer__title title--upp">присоединяйтесь</h6>
-          <ul class="buttons buttons--round footer__buttons">
-            <li class="buttons buttons__list--round">
-              <a class="button button--round button--inversion" href="#">
-                <svg width="20" height="20">
-                  <use
-                    class="button__icon"
-                    href="./img/sprite.svg#instagram"
-                  ></use>
+          </li>
+          <li class="footer__item">
+            <h6 class="footer__title title--upp">Подпишитесь на рассылку</h6>
+            <form class="form--subscription">
+              <label class="input__label">
+                <input
+                  class="input input--inversion"
+                  name="email"
+                  type="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button
+                type="submit"
+                class="button button--size-l footer__button"
+              >
+                <span class="button__span">Подписаться</span>
+                <svg class="button__icon" width="24" height="24">
+                  <use href="./img/sprite.svg#send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="buttons buttons__list--round">
-              <a class="button button--round button--inversion" href="#">
-                <svg width="20" height="20">
-                  <use
-                    class="button__icon"
-                    href="./img/sprite.svg#twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="buttons buttons__list--round">
-              <a class="button button--round button--inversion" href="#">
-                <svg width="20" height="20">
-                  <use
-                    class="button__icon"
-                    href="./img/sprite.svg#facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="buttons buttons__list--round">
-              <a class="button button--round button--inversion" href="#">
-                <svg width="20" height="20">
-                  <use
-                    class="button__icon"
-                    href="./img/sprite.svg#linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="subscription footer__subscription">
-          <h6 class="footer__title title--upp">Подпишитесь на рассылку</h6>
-          <form class="form--subscription">
-            <label class="input__label">
-              <input
-                class="input input--inversion form--subscription__intput"
-                name="email"
-                type="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button type="submit" class="button button--size-l footer__button">
-              <span class="button__span">Подписаться</span>
-              <svg class="button__icon" width="24" height="24">
-                <use href="./img/sprite.svg#send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+              </button>
+            </form>
+          </li>
+        </ul>
       </div>
     </footer>
 
