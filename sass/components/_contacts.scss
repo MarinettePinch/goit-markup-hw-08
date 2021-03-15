@@ -5,40 +5,76 @@
   font-style: normal;
 }
 
-.address__items--row {
-  @extend %flex-sb;
-}
-
-.address__list {
-  @extend %list;
-  margin-bottom: 9px;
-}
-
-.address__list--row {
-  margin-bottom: 0;
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
 
 .address__link {
   @extend %link;
   color: $light-footer-text-color;
 }
 
+.address__list--colunm {
+  @extend %list;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.address__items--row {
+  @extend %flex-st;
+  flex-direction: column-reverse;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+.address__list--row {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+      margin-bottom: 32px;
+    }
+  }
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+    margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+
 .address__link--row {
-  font-size: $mail-text-size;
-  line-height: $mail-text-line-height;
+  font-size: var(--tel-text-size);
+  line-height: var(--tel-text-line-height);
   font-weight: $header-text-weight;
   letter-spacing: $header-letter-spacing;
   font-style: normal;
-  color: $grey-text-color;
-  transition: color $transition-animation;
-  &:hover,
-  &:focus,
-  &:active {
-    color: $hover-text-color;
-    cursor: pointer;
+  color: $hover-text-color;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    color: $grey-text-color;
+    transition: color $transition-animation;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hover-text-color;
+    }
+  }
+}
+
+.address__img {
+  display: block;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -47,5 +83,24 @@
 }
 
 .address__span {
-  margin-left: 10px;
+  margin-left: var(--span-margin-l);
+}
+
+.address--size-s {
+  @media screen and (max-width: 767px) {
+    font-size: $mail-text-size;
+    line-height: $mail-text-line-height;
+    color: $grey-text-color;
+  }
+}
+
+.address__buttons {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: start;
+    margin-top: 64px;
+  }
 }

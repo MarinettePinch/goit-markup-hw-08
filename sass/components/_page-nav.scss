@@ -1,29 +1,40 @@
 .page-nav {
-  @extend %flex-sb;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
 }
 
 .page-nav__items {
-  @extend %flex-sb;
-  margin-left: 93px;
+  @extend %flex-st;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    align-items: flex-end;
+    flex-direction: row;
+  }
 }
 
 .page-nav__list {
   @extend %list;
+  text-align: start;
   position: relative;
   display: block;
-  height: 14px;
+  height: var(--nav-text-size);
   width: auto;
-
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: var(--nav-margin-b);
+    margin-right: var(--nav-margin-r);
   }
 }
 
 .page-nav__link {
   @extend %link;
   display: block;
-  font-size: $nav-text-size;
-  line-height: $tel-text-line-height;
+  font-size: var(--nav-text-size);
+  line-height: var(--nav-text-line-height);
   font-weight: $header-text-weight;
   letter-spacing: $header-letter-spacing;
   color: $primary-text-color;
@@ -31,13 +42,7 @@
   &.current {
     color: $hover-text-color;
     &::after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: $hover-text-color;
-      margin-top: 28px;
+      @extend %underline;
     }
   }
 
@@ -45,15 +50,8 @@
   &:focus,
   &:active {
     color: $hover-text-color;
-    cursor: pointer;
     &::after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: $hover-text-color;
-      margin-top: 28px;
+      @extend %underline;
     }
   }
 }

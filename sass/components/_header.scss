@@ -1,7 +1,16 @@
 .header {
+  overflow: hidden;
   @extend %flex-sb;
-  padding: $header-padding;
-  height: $header-hight;
+  padding: var(--header-padding);
+  height: var(--header-hight);
   width: 100%;
   border-bottom: 1px solid $border-color;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.header__address {
+  margin-left: var(--address-margin);
 }

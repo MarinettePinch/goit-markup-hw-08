@@ -1,0 +1,23 @@
+.menu {
+  @extend %flex-sb;
+  margin-left: var(--menu-margin);
+
+  &.is-open {
+    overflow: hidden;
+    display: flex;
+    background-color: $light-text-color;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 796px;
+    padding: 48px 40px;
+    z-index: 10;
+  }
+}

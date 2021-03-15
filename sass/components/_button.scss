@@ -21,10 +21,49 @@
   }
 }
 
+.button__burger {
+  fill: currentColor;
+  display: flex;
+}
+
+.button__cross {
+  fill: currentColor;
+  display: none;
+}
+
+.button--menu {
+  @extend %flex-c;
+  color: $primary-text-color;
+  background-color: $light-text-color;
+  border: none;
+  margin-right: 8px;
+  z-index: 20;
+  transition: color $transition-animation;
+  &:hover {
+    color: $hover-text-color;
+    cursor: pointer;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &.is-open .button__burger {
+    display: none;
+  }
+  &.is-open .button__cross {
+    display: flex;
+    z-index: 20;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .button--size-l {
   background-color: $hover-text-color;
   color: $light-text-color;
-  min-width: 200px;
+  margin: 0 auto;
+  width: 200px;
   min-height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -51,7 +90,7 @@
   color: $icons-color;
   background-color: $light-text-color;
   height: 90px;
-  width: 170px;
+  width: 100%;
   padding: 0 0 0 0;
   border: 1px solid $icons-color;
   transition: border-color $transition-animation;
@@ -88,6 +127,16 @@
     color: $hover-text-color;
     background-color: $light-text-color;
   }
+}
+
+.button--social {
+  @extend %link;
+  font-style: normal;
+  color: $hover-text-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 .button__icon {

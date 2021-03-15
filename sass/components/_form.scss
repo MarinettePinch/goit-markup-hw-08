@@ -1,24 +1,25 @@
 .form__title {
   font-size: $form-title-size;
   font-weight: $form-title-weight;
-  line-height: $form-title-line-height;
+  line-height: var(--form-title-line-height);
   text-align: center;
   margin-bottom: 12px;
 }
 
 .form--subscription {
-  @extend %flex-sb;
-  align-items: flex-start;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .form__input {
   margin-bottom: 10px;
 }
 
-.form--subscription__input {
-  margin: 0 10px 0 0;
-}
-
 .form__button {
-  margin: 0 123px;
+  margin: 0 auto;
 }

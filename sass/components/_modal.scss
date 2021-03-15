@@ -1,5 +1,6 @@
 .modal {
-  width: 530px;
+  z-index: 30;
+  width: var(--modal-width);
   min-height: 580px;
   padding: 40px;
   background-color: $light-text-color;
@@ -23,15 +24,16 @@
   opacity: 1;
   background-color: $backdrop-bg-color;
   transition: opacity $transition-animation;
+  z-index: 30;
 }
 
 .backdrop__modal {
   position: relative;
+  overflow-y: scroll;
   margin: auto;
+  z-index: 40;
 }
 
 .is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  @extend %hidden;
 }

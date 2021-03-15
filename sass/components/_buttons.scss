@@ -2,15 +2,18 @@
   @extend %flex-sb;
 }
 
-.buttons--center {
-  @extend %flex-c;
+.buttons--round {
+  margin: auto;
+  max-width: 206px;
+}
+
+.buttons--margin-l {
+  margin-right: -$lattice-margin;
+  margin-bottom: -$lattice-margin;
 }
 
 .buttons__list {
   @extend %list;
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
 }
 
 .buttons__list--round {
@@ -19,8 +22,35 @@
   }
 }
 
+.buttons__list--grey {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
 .buttons__list--margin-l {
+  flex-basis: var(--btn-width);
+  margin-right: $lattice-margin;
+  margin-bottom: $lattice-margin;
+}
+
+.buttons__list--social {
+  @extend %flex-c;
+  flex-wrap: nowrap;
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 10px;
+  }
+  &:not(:first-child) {
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: 10px;
+      height: 22px;
+      width: 1px;
+      background-color: $primary-text-color;
+      opacity: 0.2;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
